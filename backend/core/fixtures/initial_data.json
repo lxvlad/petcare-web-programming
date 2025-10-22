@@ -1,0 +1,103 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "username": "demo",
+      "email": "demo@example.com",
+      "password": "pbkdf2_sha256$600000$demo$Q9a9mE2n7c3oR3XjJqQf6g3oR7T6X7C9J6wz0Q8k1sQ="
+    }
+  },
+  {
+    "model": "core.pet",
+    "pk": 1,
+    "fields": {
+      "owner": 1,
+      "name": "Buddy",
+      "species": "dog",
+      "breed": "Labrador",
+      "sex": "male",
+      "birth_date": "2021-05-15",
+      "weight_kg": "24.50",
+      "photo_url": "/media/pets/dog_1.jpg"
+    }
+  },
+  {
+    "model": "core.pet",
+    "pk": 2,
+    "fields": {
+      "owner": 1,
+      "name": "Misty",
+      "species": "cat",
+      "breed": "British Shorthair",
+      "sex": "female",
+      "birth_date": "2022-03-12",
+      "weight_kg": "4.30",
+      "photo_url": "/media/pets/cat_1.jpg"
+    }
+  },
+  {
+    "model": "core.vaccination",
+    "pk": 1,
+    "fields": {
+      "pet": 1,
+      "name": "Rabies",
+      "date": "2025-05-10",
+      "next_due": "2026-05-10",
+      "vet_clinic": "VetCare Lviv"
+    }
+  },
+  {
+    "model": "core.vaccination",
+    "pk": 2,
+    "fields": {
+      "pet": 2,
+      "name": "FVRCP",
+      "date": "2025-06-01",
+      "next_due": "2026-06-01",
+      "vet_clinic": "Cat Clinic"
+    }
+  },
+  {
+    "model": "core.appointment",
+    "pk": 1,
+    "fields": {
+      "pet": 1,
+      "date": "2025-11-01T10:30:00Z",
+      "type": "checkup",
+      "notes": "Annual check",
+      "status": "planned"
+    }
+  },
+  {
+    "model": "core.appointment",
+    "pk": 2,
+    "fields": {
+      "pet": 2,
+      "date": "2025-12-12T09:00:00Z",
+      "type": "grooming",
+      "notes": "Nail trim",
+      "status": "planned"
+    }
+  },
+  {
+    "model": "core.note",
+    "pk": 1,
+    "fields": {
+      "pet": 1,
+      "date": "2025-10-20T08:00:00Z",
+      "kind": "feeding",
+      "text": "Dry food 150g"
+    }
+  },
+  {
+    "model": "core.note",
+    "pk": 2,
+    "fields": {
+      "pet": 2,
+      "date": "2025-10-21T19:30:00Z",
+      "kind": "medicine",
+      "text": "1/2 tablet after dinner"
+    }
+  }
+]

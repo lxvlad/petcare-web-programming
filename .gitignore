@@ -1,0 +1,86 @@
+# === Python / Django ===
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.db
+*.log
+.env
+.venv/
+db.sqlite3
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.coverage
+htmlcov/
+.DS_Store
+
+# === Django specific ===
+media/
+staticfiles/
+*.mo
+*.pyproj
+*.idea/
+*.vscode/
+
+# === Node / React (frontend) ===
+frontend/node_modules/
+frontend/.vite/
+frontend/dist/
+frontend/build/
+frontend/.env
+frontend/.DS_Store
+
+# === System files ===
+Thumbs.db
+ehthumbs.db
+.DS_Store
+Icon?
+desktop.ini
+
+# === IDE / Editors ===
+.vscode/
+.idea/
+*.iml
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.user
+*.vs/
+.history/
+
+# === Misc ===
+*.bak
+*.tmp
+*.orig
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+coverage/
+dist/
+build/
+.cache/
+
+# === macOS / Windows metadata ===
+.DS_Store
+.AppleDouble
+.LSOverride
+ehthumbs.db
+Thumbs.db
+
+# в корені
+frontend/
+# + стандартні бекап-ігнори
+__pycache__/
+*.py[cod]
+.venv/
+.env
+db.sqlite3
+*.sqlite3
+staticfiles/
+media/
+
